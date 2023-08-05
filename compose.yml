@@ -45,13 +45,5 @@ services:
     env_file: .env
     volumes:
       - redash_database:/var/lib/postgresql/data
-  nginx:
-    image: arm64v8/nginx:latest
-    ports:
-      - "80:80"
-    depends_on:
-      - server
-    links:
-      - server:redash
 volumes:
   redash_database:
