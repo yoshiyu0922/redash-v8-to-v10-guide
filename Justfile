@@ -3,6 +3,3 @@ create-db:
 
 run:
     docker compose up server scheduler scheduled_worker adhoc_worker redis postgres
-
-migrate:
-    docker compose up server migrate

@@ -28,10 +28,4 @@ just run
 
 - http://localhost:5000/setup を開くとセットアップ画面が開くことを確認してセットアップしてから redash を落とす
 - redash の Docker イメージを `redash/redash:10.1.0.b50633` に変更する
-- redash を再起動する
-  - この時点ではログインはできるが、その後でエラーになる
-- migration を実行する
-```shell
-just migrate
-```
 - ログインして redash の画面が開くことが確認できる
